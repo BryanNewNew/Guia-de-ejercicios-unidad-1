@@ -4,14 +4,15 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Guia_de_ejercicios_unidad1.ClasesDelaGuiadeEjercicios
+namespace Guia_de_ejercicios_unidad1.Bloque1
 {
     public class Ejercicio1
     {
 // Conversor de moneda - Solicitar un monto en lempiras y la tasa de cambio del día. Convertir el
 // monto a dólares y a euros, mostrando los resultados con dos decimales
-        public void ConvertirMoneda()
+        public void Ejecutar()
         {
+            Console.WriteLine("--- 1. Conversor de Moneda ---");
             double montoL = 0;
             Console.WriteLine("Ingrese el monto en Lempiras de la moneda que desea convertir:");
             while(!double.TryParse(Console.ReadLine(), out montoL) || montoL < 0)
